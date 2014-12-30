@@ -5,7 +5,7 @@ KERNEL_IMAGETYPE ?= "bzImage"
 
 COMPATIBLE_MACHINE = "(edison)"
 
-FILESEXTRAPATHS_prepend := "${THISDIR}/linux-edison:${THISDIR}/linux-edison/${MACHINE}"
+FILESEXTRAPATHS_prepend := "${THISDIR}/linux-edison:${THISDIR}/linux-edison/${MACHINE}:"
 
 PV = "3.10.17"
 
