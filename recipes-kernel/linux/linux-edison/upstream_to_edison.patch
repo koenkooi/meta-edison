@@ -1,4 +1,4 @@
-From 269a8a7f9c721189ea8e489db65482d3d022ac7b Mon Sep 17 00:00:00 2001
+From fbed00b172e383a176666bdda8a9e712c1fac6dd Mon Sep 17 00:00:00 2001
 From: Fabien Chereau <fabien.chereau@intel.com>
 Date: Thu, 4 Sep 2014 11:11:37 +0200
 Subject: [PATCH] Squashed all commits from upstream to Edison
@@ -377,6 +377,7 @@ Change-Id: Ic55424357d5e3a9ff5bcdd4d02ce06bbe4191acc
  include/linux/usb/phy.h                            |   14 +
  include/linux/wl12xx.h                             |    5 +
  include/linux/wlan_plat.h                          |   29 +
+ include/trace/mfd_trace.h                          |    1 +
  include/uapi/linux/usb/ch9.h                       |    1 +
  init/main.c                                        |    2 +
  kernel/irq/chip.c                                  |    1 +
@@ -384,7 +385,7 @@ Change-Id: Ic55424357d5e3a9ff5bcdd4d02ce06bbe4191acc
  kernel/power/process.c                             |    2 +
  kernel/printk.c                                    |   18 +-
  sound/soc/codecs/sn95031.c                         |    2 +-
- 379 files changed, 83760 insertions(+), 6453 deletions(-)
+ 380 files changed, 83761 insertions(+), 6453 deletions(-)
  create mode 100644 arch/x86/configs/i386_edison_defconfig
  create mode 100644 arch/x86/configs/i386_mrfl_defconfig
  create mode 100644 arch/x86/include/asm/bcm_bt_lpm.h
@@ -595,6 +596,7 @@ Change-Id: Ic55424357d5e3a9ff5bcdd4d02ce06bbe4191acc
  create mode 100644 include/linux/usb/dwc3-intel-mrfl.h
  create mode 100644 include/linux/usb/penwell_otg.h
  create mode 100644 include/linux/wlan_plat.h
+ create mode 120000 include/trace/mfd_trace.h
 
 diff --git a/Documentation/kernel-parameters.txt b/Documentation/kernel-parameters.txt
 index 1311a48..f18ac02 100644
@@ -99059,6 +99061,14 @@ index 0000000..98bbea0
 +};
 +
 +#endif
+diff --git a/include/trace/mfd_trace.h b/include/trace/mfd_trace.h
+new file mode 120000
+index 0000000..542136a
+--- /dev/null
++++ b/include/trace/mfd_trace.h
+@@ -0,0 +1 @@
++../../drivers/tty/serial/mfd_trace.h
+\ No newline at end of file
 diff --git a/include/uapi/linux/usb/ch9.h b/include/uapi/linux/usb/ch9.h
 index aa33fd1..29860d6 100644
 --- a/include/uapi/linux/usb/ch9.h
