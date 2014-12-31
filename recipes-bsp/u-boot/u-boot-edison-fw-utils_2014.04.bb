@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://Licenses/README;md5=025bf9f768cbcb1a165dbe1a110babfb"
 
 SECTION = "bootloader"
 
-DEPENDS = "u-boot"
+DEPENDS = "virtual/bootloader"
 
 PV = "2014.04"
 SRCREV = "dda0dbfc69f3d560c87f5be85f127ed862ea6721"
@@ -35,6 +35,7 @@ do_install () {
   install -m 755 ${S}/tools/env/fw_printenv_unstripped ${D}${sbindir}/fw_setenv
 }
 
+PACKAGE_ARCH = "${MACHINE_ARCH}"
 FILES_${PN} = "${sbindir}/*"
 FILES_${PN} += "${sysconfdir}/fw_env.config"
 
