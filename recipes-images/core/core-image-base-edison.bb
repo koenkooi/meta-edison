@@ -37,12 +37,6 @@ IMAGE_INSTALL += "u-boot-edison \
 
 # The packages below aren't in any public layer yet, so add a 'DISABLED_' prefix to mark them as TODO.
 
-# Wifi firmware
-DISABLED_IMAGE_INSTALL += "bcm43340-fw \
-                  bcm43340-bt \
-                  bcm43340-mod \
-                 "
-
 # service daemon that listens to rfkill events and trigger FW patch download
 DISABLED_IMAGE_INSTALL += "bluetooth-rfkill-event"
 
