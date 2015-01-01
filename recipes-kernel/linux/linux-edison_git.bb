@@ -7,10 +7,10 @@ COMPATIBLE_MACHINE = "(edison)"
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/linux-edison:${THISDIR}/linux-edison/${MACHINE}:"
 
-PV = "3.10.17"
+PV = "3.10.32"
 
 SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git;branch=linux-3.10.y"
-SRCREV_pn-${PN} = "14e9c7db465387ede7f019c42f28c90f99fc2793"
+SRCREV_pn-${PN} = "61dde96f97bb5b1ed4c11caf9a857d55ad8f6e17"
 
 S = "${WORKDIR}/git"
 

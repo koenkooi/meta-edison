@@ -1,4 +1,4 @@
-From 097510e048d489e44976ac814342ed931f8a3681 Mon Sep 17 00:00:00 2001
+From 5535ca971ebdc78a03f8871051327d9e21790801 Mon Sep 17 00:00:00 2001
 From: Mauro Andreolini <mauro.andreolini@unimore.it>
 Date: Fri, 19 Dec 2014 20:09:48 +0100
 Subject: [PATCH 4/4] block, bfq: add Early Queue Merge (EQM) to BFQ-v7r7 for
