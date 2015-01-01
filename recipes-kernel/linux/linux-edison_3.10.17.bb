@@ -15,6 +15,9 @@ SRCREV_pn-${PN} = "14e9c7db465387ede7f019c42f28c90f99fc2793"
 S = "${WORKDIR}/git"
 
 SRC_URI += " \
-             file://upstream_to_edison.patch \
+             file://0001-Squashed-all-commits-from-upstream-to-Edison.patch \
+             file://0002-block-cgroups-kconfig-build-bits-for-BFQ-v7r7-3.10.8.patch \
+             file://0003-block-introduce-the-BFQ-v7r7-I-O-sched-for-3.10.8.patch \
+             file://0004-block-bfq-add-Early-Queue-Merge-EQM-to-BFQ-v7r7-for-.patch \
              file://defconfig \
 "

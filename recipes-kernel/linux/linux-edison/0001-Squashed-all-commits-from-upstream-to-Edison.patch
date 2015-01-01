@@ -1,7 +1,7 @@
 From e789338ff84e84b7c2847d8d36d8cf07fdc4f39f Mon Sep 17 00:00:00 2001
 From: Fabien Chereau <fabien.chereau@intel.com>
 Date: Thu, 4 Sep 2014 11:11:37 +0200
-Subject: [PATCH] Squashed all commits from upstream to Edison
+Subject: [PATCH 1/4] Squashed all commits from upstream to Edison
 
 Change-Id: Ic55424357d5e3a9ff5bcdd4d02ce06bbe4191acc
 ---
@@ -869,7 +869,7 @@ index 0000000..7f3e626
 +#
 +CONFIG_INIT_ENV_ARG_LIMIT=32
 +CONFIG_CROSS_COMPILE=""
-+CONFIG_LOCALVERSION=""
++CONFIG_LOCALVERSION="-poky-edison"
 +CONFIG_LOCALVERSION_AUTO=n
 +CONFIG_HAVE_KERNEL_GZIP=y
 +CONFIG_HAVE_KERNEL_BZIP2=y
@@ -881,7 +881,7 @@ index 0000000..7f3e626
 +# CONFIG_KERNEL_LZMA is not set
 +# CONFIG_KERNEL_XZ is not set
 +# CONFIG_KERNEL_LZO is not set
-+CONFIG_DEFAULT_HOSTNAME="edison"
++CONFIG_DEFAULT_HOSTNAME="(none)"
 +# CONFIG_SWAP is not set
 +CONFIG_SYSVIPC=y
 +CONFIG_SYSVIPC_SYSCTL=y
