@@ -13,6 +13,7 @@ SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
 SRCREV_pn-${PN} = "61dde96f97bb5b1ed4c11caf9a857d55ad8f6e17"
 
 S = "${WORKDIR}/git"
+B = "${WORKDIR}/git"
 
 SRC_URI += " \
              file://0001-Squashed-all-commits-from-upstream-to-Edison.patch \
