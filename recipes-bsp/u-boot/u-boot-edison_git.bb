@@ -3,13 +3,12 @@ require u-boot-target-env.inc
 require u-boot-osip.inc
 
 LICENSE = "GPLv2+"
-LIC_FILES_CHKSUM = "file://Licenses/README;md5=025bf9f768cbcb1a165dbe1a110babfb"
+LIC_FILES_CHKSUM = "file://Licenses/README;md5=0507cd7da8e7ad6d6701926ec9b84c95"
 
-PV = "2014.04"
-SRCREV = "dda0dbfc69f3d560c87f5be85f127ed862ea6721"
+PV = "2015.10"
+SRCREV = "2e2b030bc6ed039b3b27225ee3486bd5b5d9f5a4"
 
-SRC_URI = "git://git.denx.de/u-boot.git;branch=master \
-           file://upstream_to_edison.patch \
+SRC_URI = "git://github.com/01org/edison-u-boot;branch=edison-v2015.10 \
 	   file://${MACHINE}.env \
 	   file://target_env/*.env \
 	  "

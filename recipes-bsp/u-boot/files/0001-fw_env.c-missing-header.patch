@@ -1,0 +1,26 @@
+From dd7affe7ec11aff5099b0c5cf0419cb030f2fca0 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Rafa=C3=ABl=20Carr=C3=A9?= <funman@videolan.org>
+Date: Wed, 10 Feb 2016 11:19:03 +0100
+Subject: [PATCH] fw_env.c: missing header
+
+tools/env/fw_env.c:54:2: error: unknown type name 'uint8_t'
+  uint8_t mtd_type;  /* type of the MTD device */
+---
+ tools/env/fw_env.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/tools/env/fw_env.c b/tools/env/fw_env.c
+index daa02a7..eff638a 100644
+--- a/tools/env/fw_env.c
++++ b/tools/env/fw_env.c
+@@ -17,6 +17,7 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <stddef.h>
++#include <inttypes.h>
+ #include <string.h>
+ #include <sys/types.h>
+ #include <sys/ioctl.h>
+-- 
+2.5.0
+
