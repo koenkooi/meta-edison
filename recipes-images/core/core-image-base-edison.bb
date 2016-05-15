@@ -27,7 +27,7 @@ IMAGE_FSTYPES = "ext4"
 # and this cancel creation of the boot hddimg
 NOHDD = "0"
 
-inherit bootimg
+inherit image-live
 do_bootimg[depends] += "${PN}:do_rootfs"
 
 IMAGE_ROOTFS_SIZE = "524288"
