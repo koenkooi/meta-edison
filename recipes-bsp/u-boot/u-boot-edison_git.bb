@@ -21,3 +21,5 @@ do_configure_prepend() {
 }
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
+COMPATIBLE_MACHINE = "edison"
+
